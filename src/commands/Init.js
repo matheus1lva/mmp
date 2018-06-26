@@ -1,5 +1,4 @@
 // @flow
-
 import type { Command } from './Command';
 import Inquirer from 'inquirer';
 

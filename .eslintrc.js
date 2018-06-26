@@ -1,7 +1,8 @@
 module.exports = {
+	"parser": "babel-eslint",
 	"root": true,
-	"plugins": ["node"],
-	"extends": ["eslint:recommended", "plugin:node/recommended"],
+	"plugins": ["node", "flowtype"],
+	"extends": ["eslint:recommended", "plugin:node/recommended", "plugin:flowtype/recommended"],
 	"env": {
 		"node": true,
 		"es6": true,
