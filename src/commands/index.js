@@ -1,13 +1,13 @@
 // @flow
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
 export const getCommands = (): any => {
-	const nonCommands = ['index', 'Command'];
-	const files = fs.readdirSync(path.resolve(__dirname), 'utf8');
+	const nonCommands = ["index", "Command"];
+	const files = fs.readdirSync(path.resolve(__dirname), "utf8");
 	const commands = {};
 	for (let file of files) {
-		const filenameWithoutExt = file.split('.')[0]
+		const filenameWithoutExt = file.split(".")[0];
 		const commandName = filenameWithoutExt.toLocaleLowerCase();
 		if (!nonCommands.includes(filenameWithoutExt)) {
 			const commandPath: string = path.resolve(__dirname, file);
@@ -16,7 +16,7 @@ export const getCommands = (): any => {
 		}
 	}
 	return commands;
-}
+};
 
 export const getCommandsList = (): string => {
 	const commands = getCommands();
@@ -25,5 +25,5 @@ export const getCommandsList = (): string => {
 		.map((commandName) => {
 			return `$ ${commandName}`;
 		})
-		.join('\n  ');
-}
+		.join("\n  ");
+};

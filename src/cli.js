@@ -1,8 +1,7 @@
-#!/usr/bin / env node
 // @flow
-import meow from 'meow';
-import { getCommands, getCommandsList } from './commands'
-import { flags, getOptions } from './flags';
+import meow from "meow";
+import { getCommands, getCommandsList } from "./commands";
+import { flags, getOptions } from "./flags";
 
 const commands = getCommands();
 
@@ -16,9 +15,9 @@ const cli = meow(`
 	Options:
 	 ${getOptions()}
 `, {
-		flags,
-		input: [Object.keys(commands).sort()]
-	}
+	flags,
+	input: [Object.keys(commands).sort()]
+}
 );
 
 cli.argv = cli.flags;

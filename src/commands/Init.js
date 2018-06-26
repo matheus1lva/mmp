@@ -1,24 +1,24 @@
 // @flow
-import type { Command } from './Command';
-import Inquirer from 'inquirer';
+import type { Command } from "./Command";
+import Inquirer from "inquirer";
 
 const initOptions = [
 	{
-		name: 'T1'
+		name: "T1"
 	},
 	{
-		name: 'T2'
+		name: "T2"
 	},
 	{
-		name: 'T3'
+		name: "T3"
 	}
-]
+];
 
 export default class Init implements Command {
 	async run(cli: any) {
 		const answers = await Inquirer.prompt([
 			{
-				type: 'checkbox',
+				type: "checkbox",
 				message: "Select things",
 				name: "thingsToAdd",
 				choices: initOptions,
@@ -29,6 +29,6 @@ export default class Init implements Command {
 	}
 
 	help() {
-		return "Hi from init"
+		return "Hi from init";
 	}
 }

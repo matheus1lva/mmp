@@ -1,13 +1,13 @@
-import { getCommands } from './commands'
+import { getCommands } from "./commands";
 
 export const flags = {
 	test: {
-		type: 'boolean',
-		desc: 'test123 bla nla'
+		type: "boolean",
+		desc: "test123 bla nla"
 	}
-}
+};
 
-export const getOptions = () : string => {
+export const getOptions = (): string => {
 	const optionsWithDescription = [];
 	Object.keys(flags).forEach((flag) => {
 		const description = flags[flag].desc;
@@ -18,5 +18,5 @@ export const getOptions = () : string => {
 		}
 	});
 
-	return optionsWithDescription.join('\n');
-}
+	return optionsWithDescription.join("\n");
+};
