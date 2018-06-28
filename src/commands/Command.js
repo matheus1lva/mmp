@@ -1,7 +1,6 @@
 // @flow
-import type { Cli } from "../types";
+import type { CLI } from "../types";
 export interface Command {
-	// todo: TO BE UPDATED
-	run(cli: Cli): void;
+	run(cli: CLI): void | any;
 	help(): string | void;
 }

@@ -1,5 +1,6 @@
 // @flow
 import type { Command } from "./Command";
+import type { CLI } from "../types";
 import Inquirer from "inquirer";
 
 const initOptions = [
@@ -15,7 +16,7 @@ const initOptions = [
 ];
 
 export default class Init implements Command {
-	async run(cli: any) {
+	async run(cli: CLI) {
 		const answers = await Inquirer.prompt([
 			{
 				type: "checkbox",

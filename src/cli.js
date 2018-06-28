@@ -2,8 +2,9 @@
 import meow from "meow";
 import { getCommands, getCommandsList } from "./commands";
 import { flags, getOptions } from "./flags";
+import type { CommandList } from "./types";
 
-const commands = getCommands();
+const commands: CommandList = getCommands();
 
 const cli = meow(`
 	Usage:
@@ -22,5 +23,5 @@ const cli = meow(`
 
 cli.argv = cli.flags;
 cli.commands = commands;
-const [command] = cli.input;
+const [command]: string = cli.input;
 commands[command].run(cli);
