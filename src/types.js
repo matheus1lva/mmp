@@ -11,3 +11,14 @@ export type CLI = {
 export type CommandList = {
 	[commandName: string]: Command
 }
+
+
+type Flag = {
+	type: string;
+	desc?: string;
+	alias?: string
+}
+
+export type Flags = {
+	[flagIdentifier: string] : Flag
+}

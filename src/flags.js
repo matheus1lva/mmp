@@ -1,7 +1,8 @@
 // @flow
 // import { getCommands } from "./commands";
+import type { Flags } from "./types";
 
-export const flags = {
+export const flags: Flags = {
 	test: {
 		type: "boolean",
 		desc: "test123 bla nla"
@@ -11,7 +12,7 @@ export const flags = {
 export const getOptions = (): string => {
 	const optionsWithDescription = [];
 	Object.keys(flags).forEach((flag) => {
-		const description = flags[flag].desc;
+		const description = flags[flag].desc || "default description";
 		if (flags[flag].alias) {
 			optionsWithDescription.push(`--${flag}, --${flags[flag].alias}  -  ${description}`);
 		} else {
