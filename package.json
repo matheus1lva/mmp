@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:watch": "babel --watch src -d lib/",
-    "lint": "eslint ."
+    "lint": "eslint --fix && eslint ."
   },
   "keywords": [],
   "author": "",
