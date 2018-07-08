@@ -21,10 +21,24 @@
     "babel-eslint": "8.2.5",
     "eslint": "4.19.1",
     "eslint-plugin-node": "6.0.1",
-    "flow-bin": "0.74.0"
+    "flow-bin": "0.74.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "1.13.7"
   },
   "dependencies": {
     "inquirer": "6.0.0",
     "meow": "5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write", 
+      "git add"
+    ]
   }
 }
