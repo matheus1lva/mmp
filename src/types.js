@@ -1,5 +1,6 @@
 // @flow
 import type { Command } from "./commands/Command";
+
 export type CLI = {
 	input: Array<any>;
 	flags: any;
