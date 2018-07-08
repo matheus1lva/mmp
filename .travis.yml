@@ -14,9 +14,9 @@ cache:
     - ~/.npm
 
 install:
-  yarn
+  - yarn
 
 script:
-  yarn flow status
-  yarn lint
-  yarn test
+  - yarn flow status
+  - yarn lint
+  - yarn test
