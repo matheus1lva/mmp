@@ -1,4 +1,5 @@
-import { getCommands } from "./commands";
+// @flow
+// import { getCommands } from "./commands";
 
 export const flags = {
 	test: {

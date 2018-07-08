@@ -16,9 +16,9 @@ const cli = meow(`
 	Options:
 	 ${getOptions()}
 `, {
-		flags,
-		input: [Object.keys(commands).sort()]
-	}
+	flags,
+	input: [Object.keys(commands).sort()]
+}
 );
 
 cli.argv = cli.flags;
