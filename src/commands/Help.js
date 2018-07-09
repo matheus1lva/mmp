@@ -2,7 +2,7 @@
 import type { Command } from "./Command";
 import type { CLI, CommandList } from "../types";
 import { getCommands } from "./index";
-import {Log} from '../utils/log';
+import { Log } from "../utils/log";
 
 export default class Help implements Command {
 	run(cli: CLI): any {
