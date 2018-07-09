@@ -11,6 +11,8 @@ module.exports = {
 		"@babel/preset-flow"
 	],
 	plugins: [
-		"@babel/plugin-proposal-class-properties"
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-proposal-optional-chaining",
+		"@babel/plugin-transform-async-to-generator",
 	]
 };
