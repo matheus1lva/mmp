@@ -19,4 +19,5 @@ install:
 script:
   - yarn flow status
   - yarn lint
+  - commit lint
   # - yarn test
