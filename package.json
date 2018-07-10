@@ -6,7 +6,16 @@
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:watch": "babel --watch src -d lib/",
-    "lint": "eslint ."
+    "lint": "eslint src/",
+    "commitmsg": "commitlint -E GIT_PARAMS"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
   },
   "keywords": [],
   "author": "",
@@ -20,7 +29,15 @@
     "@babel/polyfill": "7.0.0-beta.51",
     "@babel/preset-env": "7.0.0-beta.51",
     "@babel/preset-flow": "7.0.0-beta.51",
+    "@commitlint/cli": "7.0.0",
+    "@commitlint/config-angular": "7.0.0",
+    "@commitlint/config-conventional": "7.0.1",
+    "@commitlint/prompt-cli": "7.0.0",
+    "@commitlint/travis-cli": "7.0.0",
     "babel-eslint": "8.2.5",
+    "commitizen": "2.10.1",
+    "conventional-changelog-lint-config-cz": "0.3.0",
+    "cz-customizable": "5.2.0",
     "eslint": "4.19.1",
     "eslint-plugin-node": "6.0.1",
     "flow-bin": "0.74.0",
