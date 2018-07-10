@@ -17,8 +17,8 @@
       "config": "./.cz-config.js"
     }
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["scaffolding", "cli", "customization", "init project"],
+  "author": "Matheus Gonçalves da Silva <PlayMa256>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.51",
