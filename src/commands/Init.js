@@ -117,8 +117,6 @@ export default class Init implements Command {
 		if (targetFolder !== "./" && !fs.existsSync(target)) {
 			fs.mkdirSync(target);
 		}
-
-
 	}
 
 	help() {
