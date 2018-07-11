@@ -18,6 +18,6 @@ export default class Help implements Command {
 	}
 
 	help() {
-		return;
+		return "";
 	}
 }

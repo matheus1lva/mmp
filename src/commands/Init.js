@@ -2,8 +2,12 @@
 import type { Command } from "./Command";
 import type { CLI } from "../types";
 import Inquirer from "inquirer";
-import path from 'path';
-import fs from 'fs';
+import path from "path";
+import fs from "fs";
+
+type Results = {
+	[option: string]: Object
+}
 
 const transpilerOptions = [
 	{
@@ -16,7 +20,8 @@ const transpilerOptions = [
 
 export default class Init implements Command {
 	async run(cli: CLI) {
-		const folderName = cli.input[1];
+		const folderName: string = cli.input[1]; //eslint-disable-line
+		const results: Results = {};
 
 		const transpilers = await Inquirer.prompt([
 			{
@@ -68,6 +73,7 @@ export default class Init implements Command {
 					}
 				]);
 
+				results["transpilers"] = {};
 				results["transpilers"]["babel"] = babelAdditions;
 				break;
 			}
@@ -101,15 +107,18 @@ export default class Init implements Command {
 		]);
 		results["linter"] = linterOptions.eslint;
 
+		this.processOptions(results, folderName);
 	}
 
-	generateOptions = ({results, targetFolder}) => {
-		if (targetFolder) {
-			if (!fs.existsSync(path.resolve(targetFolder))) {
-				// add mode
-				fs.mkdirSync(path.resolve(path.join(process.cwd(), targetFolder)))
-			}
+	processOptions = (results: any, targetFolder: string = "./") => {
+
+		const target = path.resolve(path.relative(process.cwd(), targetFolder));
+		// create initial folder if needed
+		if (targetFolder !== "./" && !fs.existsSync(target)) {
+			fs.mkdirSync(target);
 		}
+
+
 	}
 
 	help() {
