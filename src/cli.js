@@ -1,6 +1,6 @@
 // @flow
 import meow from "meow";
-import { getCommands, getCommandsList } from "./commands";
+import { getCommands } from "./commands";
 import { flags, getOptions } from "./flags";
 import type { CommandList } from "./types";
 
@@ -11,7 +11,8 @@ const cli = meow(`
 	 $ mmp <input>
 
 	Commands: 
-	 ${getCommandsList()}
+	 $ help <commandName>       Displays help for a given command
+	 $ init <projectName>       Starts the scaffolding for your new project
 
 	Options:
 	 ${getOptions()}

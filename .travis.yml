@@ -19,5 +19,5 @@ install:
 script:
   - yarn flow status
   - yarn lint
-  - commit lint
+  - commitlint-travis
   # - yarn test
