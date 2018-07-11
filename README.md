@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PlayMa256/mmp.svg?branch=master)](https://travis-ci.org/PlayMa256/mmp)
+[![Build Status](https://travis-ci.org/PlayMa256/mmp.svg?branch=master)](https://travis-ci.org/PlayMa256/mmp) [![Greenkeeper badge](https://badges.greenkeeper.io/PlayMa256/mmp.svg)](https://greenkeeper.io/)
 
 # Make My Project
 
