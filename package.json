@@ -39,7 +39,7 @@
     "conventional-changelog-lint-config-cz": "0.3.0",
     "cz-customizable": "5.2.0",
     "eslint": "5.1.0",
-    "eslint-plugin-node": "7.0.0",
+    "eslint-plugin-node": "7.0.1",
     "flow-bin": "0.76.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
