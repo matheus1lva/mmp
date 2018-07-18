@@ -42,6 +42,7 @@ module.exports = {
 		"space-before-blocks": "error",
 		"object-curly-spacing": ["error", "always"],
 		"object-curly-newline": ["error", { "consistent": true }],
+		"node/no-unsupported-features/es-syntax": ["off"],
 		"keyword-spacing": ["error", {
 			"after": true,
 			"overrides": {
