@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
-  "engines": {
-    "node": ">=6.0.0"
-  },
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:watch": "babel --watch src -d lib/",
@@ -20,12 +17,7 @@
       "config": "./.cz-config.js"
     }
   },
-  "keywords": [
-    "scaffolding",
-    "cli",
-    "customization",
-    "init project"
-  ],
+  "keywords": ["scaffolding", "cli", "customization", "init project"],
   "author": "Matheus Gonçalves da Silva <PlayMa256>",
   "license": "ISC",
   "devDependencies": {
@@ -47,7 +39,6 @@
     "conventional-changelog-lint-config-cz": "0.3.0",
     "cz-customizable": "5.2.0",
     "eslint": "5.1.0",
-    "eslint-plugin-flowtype": "2.50.0",
     "eslint-plugin-node": "7.0.1",
     "flow-bin": "0.76.0",
     "husky": "^0.14.3",
