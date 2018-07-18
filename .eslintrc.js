@@ -2,7 +2,10 @@
 module.exports = {
 	"parser": "babel-eslint",
 	"root": true,
-	"plugins": ["node"],
+	"plugins": [
+		"node",
+		"flowtype"
+	],
 	"extends": ["eslint:recommended", "plugin:node/recommended"],
 	"env": {
 		"node": true,
@@ -63,5 +66,10 @@ module.exports = {
 		"eol-last": ["error", "always"],
 		"newline-per-chained-call": "off",
 		"node/process-exit-as-throw": "error"
-	}
+	},
+	"settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
 };
