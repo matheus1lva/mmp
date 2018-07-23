@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PlayMa256/mmp.svg?branch=master)](https://travis-ci.org/PlayMa256/mmp) [![Greenkeeper badge](https://badges.greenkeeper.io/PlayMa256/mmp.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/PlayMa256/mmp.svg?branch=master)](https://travis-ci.org/PlayMa256/mmp) [![Greenkeeper badge](https://badges.greenkeeper.io/PlayMa256/mmp.svg)](https://greenkeeper.io/)[![Coverage Status](https://coveralls.io/repos/github/PlayMa256/mmp/badge.svg?branch=master)](https://coveralls.io/github/PlayMa256/mmp?branch=master)
 
 # Make My Project
 
