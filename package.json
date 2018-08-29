@@ -34,7 +34,7 @@
     "@babel/preset-flow": "7.0.0",
     "@commitlint/cli": "7.1.1",
     "@commitlint/config-angular": "7.1.1",
-    "@commitlint/config-conventional": "7.1.0",
+    "@commitlint/config-conventional": "7.1.1",
     "@commitlint/prompt-cli": "7.1.1",
     "@commitlint/travis-cli": "7.1.0",
     "babel-eslint": "9.0.0",
