@@ -1,8 +1,6 @@
-// @flow
 import meow from "meow";
 import { getCommands } from "./commands";
 import { flags, getOptions } from "./flags";
-import type { CommandList } from "./types";
 
 const commands: CommandList = getCommands();
 

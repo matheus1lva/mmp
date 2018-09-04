@@ -1,23 +1,25 @@
-// @flow
-import type { Command } from "./commands/Command";
-
-export type CLI = {
+interface CLI {
 	input: Array<any>;
 	flags: any;
 	argv?: any;
 	commands: any;
 }
 
-export type CommandList = {
+interface Command {
+	run(cli: CLI): void | any;
+	help(): string | void;
+}
+
+interface CommandList {
 	[commandName: string]: Command
 }
 
-type Flag = {
+interface Flag {
 	type: string;
 	desc?: string;
 	alias?: string;
 }
 
-export type Flags = {
+interface Flags {
 	[flagIdentifier: string] : Flag
 }

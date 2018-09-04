@@ -32,6 +32,8 @@
     "@commitlint/config-conventional": "7.1.1",
     "@commitlint/prompt-cli": "7.1.1",
     "@commitlint/travis-cli": "7.1.0",
+    "@types/inquirer": "0.0.43",
+    "@types/meow": "4.0.1",
     "commitizen": "2.10.1",
     "conventional-changelog-lint-config-cz": "0.3.0",
     "cz-customizable": "5.2.0",

@@ -1,7 +1,3 @@
-// @flow
-// import { getCommands } from "./commands";
-import type { Flags } from "./types";
-
 export const flags: Flags = {
 	test: {
 		type: "boolean",

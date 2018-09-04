@@ -1,6 +1,4 @@
 // @flow
-import type { Command } from "./Command";
-import type { CLI } from "../types";
 import Inquirer from "inquirer";
 import path from "path";
 import fs from "fs";
