@@ -4,11 +4,9 @@
   "description": "",
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "scripts": {
-    "build": "babel src/ -d lib/",
-    "build:watch": "babel --watch src -d lib/",
     "lint": "eslint src/",
     "commitmsg": "commitlint -E GIT_PARAMS"
   },
@@ -20,33 +18,29 @@
       "config": "./.cz-config.js"
     }
   },
-  "keywords": ["scaffolding", "cli", "customization", "init project"],
+  "keywords": [
+    "scaffolding",
+    "cli",
+    "customization",
+    "init project"
+  ],
   "author": "Matheus Gonçalves da Silva <PlayMa256>",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "7.0.0",
-    "@babel/core": "7.0.0",
-    "@babel/plugin-proposal-class-properties": "7.0.0",
-    "@babel/plugin-proposal-optional-chaining": "7.0.0",
-    "@babel/plugin-transform-async-to-generator": "7.0.0",
-    "@babel/polyfill": "7.0.0",
-    "@babel/preset-env": "7.0.0",
-    "@babel/preset-flow": "7.0.0",
     "@commitlint/cli": "7.1.1",
     "@commitlint/config-angular": "7.1.1",
     "@commitlint/config-conventional": "7.1.1",
     "@commitlint/prompt-cli": "7.1.1",
     "@commitlint/travis-cli": "7.1.0",
-    "babel-eslint": "9.0.0",
     "commitizen": "2.10.1",
     "conventional-changelog-lint-config-cz": "0.3.0",
     "cz-customizable": "5.2.0",
     "eslint": "5.1.0",
     "eslint-plugin-node": "7.0.1",
-    "flow-bin": "0.80.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
-    "prettier": "1.14.2"
+    "prettier": "1.14.2",
+    "typescript": "3.0.3"
   },
   "dependencies": {
     "chalk": "2.4.1",
