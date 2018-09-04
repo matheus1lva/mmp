@@ -7,7 +7,7 @@ interface CLI {
 
 interface Command {
 	run(cli: CLI): void | any;
-	help(): string | void;
+	help(): string;
 }
 
 interface CommandList {

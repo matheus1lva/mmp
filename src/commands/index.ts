@@ -4,7 +4,7 @@ import path from "path";
 export const getCommands = (): any => {
 	const nonCommands = ["index", "Command"];
 	const files = fs.readdirSync(path.resolve(__dirname), "utf8");
-	const commands = {};
+	const commands: any = {};
 	for (let file of files) {
 		const filenameWithoutExt = file.split(".")[0];
 		const commandName = filenameWithoutExt.toLocaleLowerCase();

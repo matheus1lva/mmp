@@ -16,11 +16,13 @@ const cli = meow(`
 	 ${getOptions()}
 `, {
 	flags,
+	// @ts-ignore
+	// TODO: fix
 	input: [Object.keys(commands).sort()]
 }
 );
 
 cli.argv = cli.flags;
 cli.commands = commands;
-const [command]: string = cli.input;
+const [command] = cli.input;
 commands[command].run(cli);

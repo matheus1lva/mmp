@@ -6,7 +6,7 @@ export const flags: Flags = {
 };
 
 export const getOptions = (): string => {
-	const optionsWithDescription = [];
+	const optionsWithDescription: Array<any> = [];
 	Object.keys(flags).forEach((flag) => {
 		const description = flags[flag].desc || "default description";
 		if (flags[flag].alias) {

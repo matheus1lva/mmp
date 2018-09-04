@@ -1,10 +1,10 @@
-// @flow
+
 import Inquirer from "inquirer";
 import path from "path";
 import fs from "fs";
 
-type Results = {
-	[option: string]: Object
+interface Results {
+	[option: string]: any
 }
 
 const transpilerOptions = [
@@ -21,7 +21,9 @@ export default class Init implements Command {
 		const folderName: string = cli.input[1]; //eslint-disable-line
 		const results: Results = {};
 
-		const transpilers = await Inquirer.prompt([
+		const transpilers: {
+			transpilers?: any
+		} = await Inquirer.prompt([
 			{
 				type: "list",
 				message: "Select one type of transpiler/compiler",
@@ -95,7 +97,9 @@ export default class Init implements Command {
 			}
 		];
 
-		const linterOptions = await Inquirer.prompt([
+		const linterOptions: {
+			eslint?: any
+		} = await Inquirer.prompt([
 			{
 				type: "checkbox",
 				message: "What options do you want in your eslint config",
