@@ -46,7 +46,7 @@
     "flow-bin": "0.80.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
-    "prettier": "1.14.2"
+    "prettier": "1.14.3"
   },
   "dependencies": {
     "chalk": "2.4.1",
