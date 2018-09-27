@@ -1,10 +1,16 @@
-import meow from "meow";
-import { getCommands } from "./commands";
+import meow, { Result } from "meow";
+import { getCommands, CommandList } from "./commands";
 import { flags, getOptions } from "./flags";
+
+export interface CliProps extends Result {
+  argv?: Result["flags"];
+  commands?: CommandList;
+}
 
 const commands: CommandList = getCommands();
 
-const cli = meow(`
+const cli: CliProps = meow(
+  `
 	Usage:
 	 $ mmp <input>
 
@@ -14,12 +20,10 @@ const cli = meow(`
 
 	Options:
 	 ${getOptions()}
-`, {
-	flags,
-	// @ts-ignore
-	// TODO: fix
-	input: [Object.keys(commands).sort()]
-}
+`,
+  {
+    flags: flags
+  }
 );
 
 cli.argv = cli.flags;
