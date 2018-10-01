@@ -1,7 +1,6 @@
 language: node_js
 
-before_install:
-  npm install -g yarn
+before_install: npm install -g yarn
 
 node_js:
   - "10"
@@ -9,7 +8,7 @@ node_js:
   - "6"
 
 cache:
-  directories: 
+  directories:
     - node_modules/
     - ~/.npm
 
@@ -17,7 +16,6 @@ install:
   - yarn
 
 script:
-  - yarn flow status
   - yarn lint
   - commitlint-travis
   # - yarn test
