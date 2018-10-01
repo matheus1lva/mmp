@@ -743,9 +743,9 @@ commander@^2.14.1, commander@^2.9.0:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.18.0.tgz#2bf063ddee7c7891176981a2cc798e5754bc6970"
 
-commitizen@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-3.0.0.tgz#291cf7ce42e14468d37f046a5fbacf808b13840b"
+commitizen@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-3.0.1.tgz#40b0a3115bde60adb1a6007fc6048fce76281756"
   dependencies:
     cachedir "2.1.0"
     cz-conventional-changelog "2.1.0"
@@ -755,7 +755,7 @@ commitizen@3.0.0:
     find-root "1.1.0"
     fs-extra "^7.0.0"
     glob "7.1.3"
-    inquirer "1.2.3"
+    inquirer "6.2.0"
     lodash "4.17.11"
     minimist "1.2.0"
     shelljs "0.7.6"
