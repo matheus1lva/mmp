@@ -17,23 +17,24 @@ const transpilerOptions = [
   }
 ];
 
+const boolean = [
+  {
+    name: "YEP!",
+    value: true
+  },
+  {
+    name: "NOP",
+    value: false
+  }
+];
+
 export default class Init implements Command {
-  async run(cli: CliProps) {
-    const folderName: string = cli.input[1]; //eslint-disable-line
-    const results: Results = {};
+  async promptTranspilers(answer: any) {
+    const results: {
+      [key: string]: any;
+    } = {};
 
-    const transpilers: {
-      transpilers?: any;
-    } = await Inquirer.prompt([
-      {
-        type: "list",
-        message: "Select one type of transpiler/compiler",
-        name: "transpilers",
-        choices: transpilerOptions
-      }
-    ]);
-
-    switch (transpilers.transpilers) {
+    switch (answer) {
       case "Babel": {
         const babelPresets = [
           {
@@ -74,43 +75,95 @@ export default class Init implements Command {
           }
         ]);
 
-        results["transpilers"] = {};
-        results["transpilers"]["babel"] = babelAdditions;
+        results["babel"] = babelAdditions;
         break;
       }
       case "TS": {
+        const targetOptions = [
+          { name: "ES5", value: "es5" },
+          { name: "ES2015", value: "es2015" },
+          { name: "ES2016", value: "es2016" },
+          { name: "ES2017", value: "es2017" },
+          { name: "ES2018", value: "es2018" },
+          { name: "ESNEXT", value: "esnext" }
+        ];
+
+        const modules = [
+          { name: "none", value: "none" },
+          { name: "commonjs", value: "commonjs" },
+          { name: "amd", value: "amd" },
+          { name: "system", value: "system" },
+          { name: "umd", value: "umd" },
+          { name: "es2015", value: "es2015" },
+          { name: "ESNext", value: "ESNext" }
+        ];
+
+        const typescriptConfiguration = await Inquirer.prompt([
+          {
+            type: "list",
+            message: "What is your target?",
+            name: "target",
+            choices: targetOptions
+          },
+          {
+            type: "list",
+            message: "What type of module?",
+            name: "moduleType",
+            choices: modules
+          },
+          {
+            type: "list",
+            message: "React?",
+            name: "jsx",
+            choices: boolean
+          }
+        ]);
+        results["ts"] = typescriptConfiguration;
         break;
       }
     }
+    return results;
+  }
 
-    const eslintChoices = [
+  async useLinter() {
+    const useLinters = await Inquirer.prompt([
       {
-        name: "None",
-        value: "none"
-      },
-      {
-        name: "Node",
-        value: "plugin:node/recommended"
-      },
-      {
-        name: "React",
-        value: "plugin:react/recommended"
-      }
-    ];
-
-    const linterOptions: {
-      eslint?: any;
-    } = await Inquirer.prompt([
-      {
-        type: "checkbox",
-        message: "What options do you want in your eslint config",
-        name: "eslint",
-        choices: eslintChoices
+        type: "list",
+        message: "Do you wan't a linter?",
+        name: "useLinter",
+        choices: boolean
       }
     ]);
-    results["linter"] = linterOptions.eslint;
 
-    this.processOptions(results, folderName);
+    // @ts-ignore
+    return useLinters.useLinter;
+  }
+
+  async run(cli: CliProps) {
+    const folderName: string = cli.input[1]; //eslint-disable-line
+    const results: Results = {};
+
+    const transpilers: {
+      transpilers?: any;
+    } = await Inquirer.prompt([
+      {
+        type: "list",
+        message: "Select one type of transpiler/compiler",
+        name: "transpilers",
+        choices: transpilerOptions
+      }
+    ]);
+
+    const transpilersResults = await this.promptTranspilers(
+      transpilers.transpilers
+    );
+
+    const useLinter = await this.useLinter();
+
+    console.log({
+      useLinter,
+      transpilersResults
+    });
   }
 
   processOptions = (results: any, targetFolder: string = "./") => {

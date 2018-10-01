@@ -1,8 +1,9 @@
-import { getCommands } from "./index";
+import { getCommands, Command, CommandList } from "./index";
 import { Log } from "../utils/log";
+import { CliProps } from "../cli";
 
 export default class Help implements Command {
-	run(cli: CLI): any {
+	run(cli: CliProps): any {
 		const availableCommands: CommandList = getCommands();
 
 		// if we got here, it was asked a help of a certain command
