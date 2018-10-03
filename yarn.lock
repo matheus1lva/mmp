@@ -743,9 +743,9 @@ commander@^2.14.1, commander@^2.9.0:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.18.0.tgz#2bf063ddee7c7891176981a2cc798e5754bc6970"
 
-commitizen@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-3.0.1.tgz#40b0a3115bde60adb1a6007fc6048fce76281756"
+commitizen@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-3.0.2.tgz#8af8d943c9b97a6a9523d824c654660a43138179"
   dependencies:
     cachedir "2.1.0"
     cz-conventional-changelog "2.1.0"
