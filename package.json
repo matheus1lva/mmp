@@ -29,7 +29,7 @@
     "@commitlint/cli": "7.1.2",
     "@commitlint/config-angular": "7.1.2",
     "@commitlint/config-conventional": "7.1.2",
-    "@commitlint/prompt-cli": "7.1.2",
+    "@commitlint/prompt-cli": "7.2.0",
     "@commitlint/travis-cli": "7.1.2",
     "@types/inquirer": "0.0.43",
     "@types/meow": "4.0.1",
