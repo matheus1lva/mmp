@@ -32,7 +32,7 @@
     "@commitlint/prompt-cli": "7.1.2",
     "@commitlint/travis-cli": "7.2.0",
     "@types/inquirer": "0.0.43",
-    "@types/meow": "4.0.1",
+    "@types/meow": "5.0.0",
     "babel-eslint": "10.0.1",
     "commitizen": "3.0.2",
     "conventional-changelog-lint-config-cz": "0.3.0",
