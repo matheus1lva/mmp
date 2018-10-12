@@ -80,7 +80,24 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@commitlint/cli@7.2.0":
+"@commitlint/cli@7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.2.1.tgz#dbb9eeb1f5015a129bb0801fbc1115eb1dcd513b"
+  dependencies:
+    "@commitlint/format" "^7.2.1"
+    "@commitlint/lint" "^7.2.1"
+    "@commitlint/load" "^7.2.1"
+    "@commitlint/read" "^7.1.2"
+    babel-polyfill "6.26.0"
+    chalk "2.3.1"
+    get-stdin "5.0.1"
+    lodash.merge "4.6.1"
+    lodash.pick "4.4.0"
+    meow "5.0.0"
+    resolve-from "^4.0.0"
+    resolve-global "^0.1.0"
+
+"@commitlint/cli@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.2.0.tgz#04fb5ba1d28bba100a7f71d51d35aa9a8fd5faba"
   dependencies:
