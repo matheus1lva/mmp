@@ -39,7 +39,7 @@
     "conventional-changelog-lint-config-cz": "0.3.0",
     "cz-customizable": "5.2.0",
     "eslint": "5.6.0",
-    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-node": "8.0.0",
     "husky": "1.1.2",
     "lint-staged": "8.0.0",
     "prettier": "1.14.3",
