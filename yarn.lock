@@ -883,9 +883,9 @@ cz-conventional-changelog@2.1.0:
     right-pad "^1.0.1"
     word-wrap "^1.0.3"
 
-cz-customizable@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/cz-customizable/-/cz-customizable-5.2.0.tgz#a172a7a24b1972e8f3d6899f3341a5d330e13fe3"
+cz-customizable@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/cz-customizable/-/cz-customizable-5.3.0.tgz#ef2f2f2cf406c99b9213fbfb047364684566368c"
   dependencies:
     editor "1.0.0"
     find-config "0.3.0"
