@@ -46,7 +46,7 @@
     "typescript": "3.0.3"
   },
   "dependencies": {
-    "chalk": "2.4.1",
+    "chalk": "2.4.2",
     "inquirer": "6.2.1",
     "meow": "5.0.0"
   },
