@@ -79,8 +79,6 @@
     esutils "^2.0.2"
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
-
-"@commitlint/cli@7.2.1":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.2.1.tgz#dbb9eeb1f5015a129bb0801fbc1115eb1dcd513b"
   dependencies:
@@ -346,16 +344,6 @@
   integrity sha512-sJj6pQ8IegH4kyiM1vAmfJ+k+kjgBeMJ3UBsYsOfPSa7rp2N6ZEh0Cbkhxu9yLlWMFbBJBwiHT33QZJgTtnSfw==
   dependencies:
     find-up "^2.1.0"
-
-"@commitlint/travis-cli@7.3.1":
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/travis-cli/-/travis-cli-7.3.1.tgz#5e57a7d0d28bb3add0b4381889e60957dc931d3b"
-  integrity sha512-G0RaGdlgHbX50ejof3Lo/76XzPsC4nAgjGM41B6dlZcMK8huLPoi9VGZTq+VVEZysO500fz2fW84MywNNwwIBg==
-  dependencies:
-    "@commitlint/cli" "^7.3.1"
-    babel-runtime "6.26.0"
-    execa "0.9.0"
-
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@iamstarkov/listr-update-renderer/-/listr-update-renderer-0.4.1.tgz#d7c48092a2dcf90fd672b6c8b458649cb350c77e"
@@ -3101,6 +3089,7 @@ resolve-from@^3.0.0:
 resolve-global@0.1.0, resolve-global@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/resolve-global/-/resolve-global-0.1.0.tgz#8fb02cfd5b7db20118e886311f15af95bd15fbd9"
+  integrity sha1-j7As/Vt9sgEY6IYxHxWvlb0V+9k=
   dependencies:
     global-dirs "^0.1.0"
 
