@@ -94,33 +94,12 @@
     meow "5.0.0"
     resolve-from "^4.0.0"
     resolve-global "^0.1.0"
-
-"@commitlint/cli@^7.3.1":
+"@commitlint/config-angular@7.3.1":
   version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.3.1.tgz#3fa4f41b5363c061a4c9f82d32ad1f276e1e675d"
-  integrity sha512-/ySTlSegey0mOpz4TxikTCV1JaAPOpouMiGg18RI10lpL5cgD4FgbZUg5zsSv+ZzsobEBRdpuGAjg8vvCIkiWg==
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-7.3.1.tgz#dfc810eadb2c4e2c4c98fc65bea5bf273193f1c4"
+  integrity sha512-eJ3WNCUjX838jpB+YAUG6lU0VuJ16CXw0eIIxbG7FQYJW510nyjO17l0sKH8LQfYQT3eEksRPzP+d+b+PwsSVQ==
   dependencies:
-    "@commitlint/format" "^7.3.1"
-    "@commitlint/lint" "^7.3.1"
-    "@commitlint/load" "^7.3.1"
-    "@commitlint/read" "^7.3.1"
-    babel-polyfill "6.26.0"
-    chalk "2.3.1"
-    get-stdin "5.0.1"
-    lodash "4.17.11"
-    meow "5.0.0"
-    resolve-from "4.0.0"
-    resolve-global "0.1.0"
-
-"@commitlint/config-angular-type-enum@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-7.1.2.tgz#7d2909f08ed174f17b89f8cd067da579e6ec1fab"
-
-"@commitlint/config-angular@7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-7.1.2.tgz#7b04086d9b0b5a4f68d129ca0b675a0e1ce33bdf"
-  dependencies:
-    "@commitlint/config-angular-type-enum" "^7.1.2"
+    "@commitlint/config-angular-type-enum" "^7.3.1"
 
 "@commitlint/config-conventional@7.1.2":
   version "7.1.2"
