@@ -73,12 +73,6 @@
     lodash "^4.17.10"
 
 "@babel/types@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0.tgz#6e191793d3c854d19c6749989e3bc55f0e962118"
-  dependencies:
-    esutils "^2.0.2"
-    lodash "^4.17.10"
-    to-fast-properties "^2.0.0"
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.2.1.tgz#dbb9eeb1f5015a129bb0801fbc1115eb1dcd513b"
   dependencies:
@@ -94,6 +88,29 @@
     meow "5.0.0"
     resolve-from "^4.0.0"
     resolve-global "^0.1.0"
+
+"@commitlint/cli@7.3.2", "@commitlint/cli@^7.3.1":
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.3.2.tgz#61abf30b48861e4fbd521690e6d4a3e1258980bb"
+  integrity sha512-QoVayW3kr6/pkWObaCmI6k8O02l/rOJmQIgy5785f6AVbUeHbLOVnh661XMunzAvDX2Cdz4mN+LenhsrLGsaug==
+  dependencies:
+    "@commitlint/format" "^7.3.1"
+    "@commitlint/lint" "^7.3.2"
+    "@commitlint/load" "^7.3.1"
+    "@commitlint/read" "^7.3.1"
+    babel-polyfill "6.26.0"
+    chalk "2.3.1"
+    get-stdin "5.0.1"
+    lodash "4.17.11"
+    meow "5.0.0"
+    resolve-from "4.0.0"
+    resolve-global "0.1.0"
+
+"@commitlint/config-angular-type-enum@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-7.3.1.tgz#986f9cf17cfef5567359a1e93247338b78a42490"
+  integrity sha512-0pkdUNv9nF2J94YvXFSu74gkefQhVqXmVj0ROqP9KTYLVstNsfyZHAg/h5wFxnvG0EF/0j1p7dXtutr03RfJqA==
+
 "@commitlint/config-angular@7.3.1":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-7.3.1.tgz#dfc810eadb2c4e2c4c98fc65bea5bf273193f1c4"
@@ -173,15 +190,16 @@
     babel-runtime "^6.23.0"
     lodash.topairs "4.3.0"
 
-"@commitlint/lint@^7.3.1":
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/lint/-/lint-7.3.1.tgz#ee54c636c0ec7238410ac5d5a6f63e2c7b879182"
-  integrity sha512-aPfjqoOHhXDbA7pb+S7yGv8SsgCgfpOXybzO2NoiqVIvcuWXE+FuqVYDLjmzjvptYGYCB0oDFkewxoeHCzQOzg==
+"@commitlint/lint@^7.3.2":
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/lint/-/lint-7.3.2.tgz#e5323ce5b65512e37089ca9e5dfd065849edbf80"
+  integrity sha512-NInm96JP89lMNR77R4zJRj/vaQWc4Ie5vR/5G5auFFiHuwyKmRWfXbGMA7zVYpAylPRgewGaELhuRzNTUW0Log==
   dependencies:
     "@commitlint/is-ignored" "^7.3.1"
     "@commitlint/parse" "^7.3.1"
     "@commitlint/rules" "^7.3.1"
     babel-runtime "^6.23.0"
+    lodash "4.17.11"
 
 "@commitlint/load@^7.2.1":
   version "7.2.1"
@@ -224,6 +242,20 @@
   dependencies:
     conventional-changelog-angular "^1.3.3"
     conventional-commits-parser "^2.1.0"
+
+"@commitlint/parse@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/parse/-/parse-7.3.1.tgz#d27de222866acc0845aefd0d8fe5a277230b9bc5"
+  integrity sha512-YqhRa6ktiNVUJ/3lOjCPjlZTPAhZ62X9GP68GUYwo1Ry0YsHdlW6s9yIB228d5OUijk1Jd2ZaeGLg3lqOOhQ8w==
+  dependencies:
+    conventional-changelog-angular "^1.3.3"
+    conventional-commits-parser "^2.1.0"
+    lodash "^4.17.11"
+
+"@commitlint/prompt-cli@7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-7.3.1.tgz#b8ca86cda7c3a5c7f988e3f008a1b99fd13a880c"
+  integrity sha512-F9GT+41FDTR1kpzzsSNAlSaKfFhoem0yE3XIUlGJf7DSvq78PZG05gkpbMi73nKlK2BSS6lCzel6WxTWWd9NZg==
   dependencies:
     "@commitlint/prompt" "^7.3.1"
     execa "0.9.0"
@@ -323,6 +355,16 @@
   integrity sha512-sJj6pQ8IegH4kyiM1vAmfJ+k+kjgBeMJ3UBsYsOfPSa7rp2N6ZEh0Cbkhxu9yLlWMFbBJBwiHT33QZJgTtnSfw==
   dependencies:
     find-up "^2.1.0"
+
+"@commitlint/travis-cli@7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/travis-cli/-/travis-cli-7.3.1.tgz#5e57a7d0d28bb3add0b4381889e60957dc931d3b"
+  integrity sha512-G0RaGdlgHbX50ejof3Lo/76XzPsC4nAgjGM41B6dlZcMK8huLPoi9VGZTq+VVEZysO500fz2fW84MywNNwwIBg==
+  dependencies:
+    "@commitlint/cli" "^7.3.1"
+    babel-runtime "6.26.0"
+    execa "0.9.0"
+
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@iamstarkov/listr-update-renderer/-/listr-update-renderer-0.4.1.tgz#d7c48092a2dcf90fd672b6c8b458649cb350c77e"
@@ -3489,10 +3531,6 @@ tmp@^0.0.33:
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
   dependencies:
     os-tmpdir "~1.0.2"
-
-to-fast-properties@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
 to-object-path@^0.3.0:
   version "0.3.0"
